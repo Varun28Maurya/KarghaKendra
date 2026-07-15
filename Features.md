@@ -206,8 +206,6 @@
 - Employment Reports
 - Production Reports
 
----
-
 # 6. Production Tracking
 
 ## Features
