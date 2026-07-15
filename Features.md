@@ -18,7 +18,6 @@
 - Notifications
 - Accessibility
 
----
 
 # 1. Authentication & Identity
 
@@ -38,8 +37,6 @@
 - Cooperative Administrator
 - Buyer
 - Government Officer
-
----
 
 # 2. Weaver
 
@@ -88,7 +85,6 @@
 - UPI Details
 - Aadhaar Status
 
----
 
 # 3. Cooperative Administrator
 
@@ -163,8 +159,6 @@
 - Financial Report
 - Member Performance Report
 
----
-
 # 4. Buyer
 
 ## Marketplace
@@ -187,7 +181,6 @@
 - Negotiate Pricing
 - Share Documents
 
----
 
 # 5. Government
 
@@ -229,8 +222,6 @@
 - Delay Detection
 - Completion Tracking
 
----
-
 # 7. Inventory Management
 
 ## Features
@@ -241,8 +232,6 @@
 - Low Stock Alerts
 - Inventory Reports
 
----
-
 # 8. Procurement Management
 
 ## Features
@@ -252,8 +241,6 @@
 - Quotation Management
 - Purchase Orders
 - Bulk Procurement
-
----
 
 # 9. Marketplace
 
@@ -266,8 +253,6 @@
 - Order Tracking
 - Delivery Tracking
 
----
-
 # 10. Finance
 
 ## Features
@@ -278,8 +263,6 @@
 - Expense Tracking
 - Invoice Generation
 
----
-
 # 11. Communication
 
 ## Features
@@ -289,8 +272,6 @@
 - Broadcast Messages
 - Announcements
 - File Sharing
-
----
 
 # 12. AI Features
 
@@ -314,8 +295,6 @@
 - Material Requirement
 - Delivery Timeline
 
----
-
 # 13. Notifications
 
 ## Features
@@ -326,8 +305,6 @@
 - Order Alerts
 - Payment Alerts
 - Inventory Alerts
-
----
 
 # 14. Accessibility
 
