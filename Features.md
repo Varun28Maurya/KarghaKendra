@@ -1,8 +1,4 @@
-# Feature.md
-
-# KarghaKendra
-
-## Modules
+# Modules
 
 - Authentication & Identity
 - Weaver Management
