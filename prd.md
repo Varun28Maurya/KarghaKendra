@@ -7,7 +7,6 @@
 
 **Kargha** is an AI-powered digital platform that helps weaving cooperatives digitize their operations, improve collaboration, and strengthen collective bargaining. It streamlines member management, procurement, inventory, sales, communication, and analytics while providing AI-driven insights for smarter decision-making.
 
----
 
 # 2. Problem Statement
 
@@ -21,13 +20,12 @@ Many weaving cooperatives still rely on manual records, phone calls, and messagi
 - Inaccurate inventory tracking
 - Lack of data-driven decisions
 
----
+
 
 # 3. Vision
 
 To empower weaving cooperatives with a unified digital platform that improves operational efficiency, transparency, and income through AI and collective commerce.
 
----
 
 # 4. Objectives
 
@@ -38,7 +36,6 @@ To empower weaving cooperatives with a unified digital platform that improves op
 - Support AI-powered decision-making
 - Increase members' income through better market access
 
----
 
 # 5. Target Users
 
@@ -55,7 +52,6 @@ To empower weaving cooperatives with a unified digital platform that improves op
 - Government Agencies
 - NGOs
 
----
 
 # 6. Core Features
 
@@ -101,7 +97,6 @@ To empower weaving cooperatives with a unified digital platform that improves op
 - Revenue reports
 - Member productivity
 
----
 
 # 7. AI Features
 
@@ -131,7 +126,7 @@ A multilingual AI assistant that helps users with:
 
 All AI recommendations include clear explanations so cooperative managers understand why a supplier, buyer, or procurement strategy has been recommended, improving transparency and trust.
 
----
+
 
 # 8. User Workflow
 
@@ -169,7 +164,6 @@ Marketplace Listing
 Buyer Purchase
 ```
 
----
 
 # 9. System Architecture
 
@@ -195,7 +189,7 @@ AI Services
  └─ AI Assistant
 ```
 
----
+
 
 # 10. Functional Requirements
 
@@ -209,7 +203,6 @@ AI Services
 - Analytics dashboard
 - AI recommendation services
 
----
 
 # 11. Non-Functional Requirements
 
@@ -222,7 +215,6 @@ AI Services
 - Scalable architecture
 - High availability and reliability
 
----
 
 # 12. MVP Scope
 
@@ -245,7 +237,6 @@ AI Services
 - Government subsidy integration
 - Predictive maintenance for looms
 
----
 
 # 13. Tech Stack
 
@@ -261,7 +252,7 @@ AI Services
 | AI/ML | Python, Scikit-learn, TensorFlow, Gemini/OpenAI API |
 | Cloud | AWS / GCP |
 
----
+
 
 # 14. Success Metrics
 
@@ -272,7 +263,7 @@ AI Services
 - 95% transaction transparency
 - Improved income for cooperative members
 
----
+
 
 # 15. Future Roadmap
 
@@ -283,7 +274,7 @@ AI Services
 - Advanced AI business insights
 - AI-powered demand prediction across regions
 
----
+
 
 # 16. Expected Impact
 
