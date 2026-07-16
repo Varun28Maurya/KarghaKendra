@@ -1,440 +1,297 @@
-Think like this
 
-Business
-     │
-     ▼
-Owner
-     │
-     ▼
-Employees
 
-Because there is only ONE owner.
+# 🛠 Tech Stack & Libraries
 
-Database Structure
-Business
-Business
+## Handloom Cooperative Digital Operating System (HH2026)
 
-{
+---
 
-_id
+# 🌐 Frontend
 
-businessName
+## Framework
 
-owner
+* React 19
+* Vite
 
-GST
+## UI & Styling
 
-Business Type
+* Tailwind CSS
+* Shadcn UI
+* Framer Motion
+* Lucide React
+* clsx
+* tailwind-merge
 
-Phone
+## Routing
 
-Email
+* React Router DOM
 
-Address
+## Forms & Validation
 
-Logo
+* React Hook Form
+* Zod
+* @hookform/resolvers
 
-Currency
+## State Management
 
-Financial Year
+* Zustand
 
-CreatedAt
+## Server State
 
-}
-User
-{
+* TanStack React Query
 
-_id,
+## HTTP Client
 
-business,
+* Axios
 
-fullName,
+## Charts & Analytics
 
-email,
+* Recharts
 
-password,
+## Tables
 
-role,
+* TanStack React Table
 
-employeeId,
+## Icons
 
-phone,
+* Lucide React
 
-profileImage,
+## Notifications
 
-isActive,
+* Sonner
 
-lastLogin
+## Date Handling
 
-}
+* date-fns
 
-Notice
+## File Upload
 
-business
+* React Dropzone
 
-This is the key.
+## QR & Barcode
 
-Every employee belongs to one business.
+* react-qr-code
+* react-barcode
 
-Employee Flow
-Owner
+## Maps
 
-↓
+* React Leaflet
+* Leaflet
 
-Create Employee
+## Internationalization
 
-↓
+* react-i18next
+* i18next
 
-Inventory Manager
+## PDF & Reports
 
-↓
+* jsPDF
+* html2canvas
 
-Sales Executive
+## Utilities
 
-Employees cannot register.
+* uuid
+* lodash
 
-Only Owner creates employees.
+---
 
-I highly recommend this.
+# ⚙ Backend
 
-Registration Flow
+## Runtime
 
-Instead of
+* Node.js
 
-Everyone Register
+## Framework
 
-Do
+* Express.js
 
-Owner Register
+## Language
 
-↓
+* JavaScript
 
-Owner Login
+## Database
 
-↓
+* PostgreSQL
 
-Create Business
+## ORM
 
-↓
+* Prisma ORM
 
-Create Employees
+## Cache
 
-This is how real ERP software works.
+* Redis
 
-Employee Login
+## Authentication
 
-Inventory Manager
+* JWT
+* bcrypt
 
-Email
+## Validation
 
-Password
+* Zod
 
-Sales
+## File Upload
 
-Email
+* Multer
 
-Password
+## Storage
 
-They do not create accounts.
+* AWS S3
+* Cloudinary (Optional)
 
-Owner creates them.
+## Email
 
-Product Module
-Product
+* Nodemailer
 
-{
+## OTP
 
-business,
+* Twilio
+* MSG91
 
-productName,
+## Real-Time Communication
 
-barcode,
+* Socket.IO
 
-sku,
+## Queue Management
 
-category,
+* BullMQ
 
-unit,
+## Image Processing
 
-purchasePrice,
+* Sharp
 
-sellingPrice,
+## Logging
 
-minimumStock,
+* Winston
+* Morgan
 
-currentStock,
+## Security
 
-status
+* Helmet
+* CORS
+* express-rate-limit
+* hpp
+* xss-clean
+* cookie-parser
 
-}
+## Compression
 
-Barcode should be unique.
+* compression
 
-Inventory Module
+## Environment Variables
 
-Instead of storing stock inside Product,
+* dotenv
 
-I recommend
+## API Documentation
 
-Product
+* Swagger
+* swagger-ui-express
 
-↓
+---
 
-Inventory
+# 🤖 AI Service
 
-Inventory
+## Framework
 
-{
+* FastAPI
 
-business,
+## Language
 
-product,
+* Python
 
-quantity,
+## Machine Learning
 
-warehouse,
+* Scikit-learn
+* TensorFlow
+* PyTorch
 
-reservedStock,
+## Computer Vision
 
-availableStock,
+* OpenCV
 
-lastUpdated
+## OCR
 
-}
+* EasyOCR
+* Tesseract OCR
 
-Much more scalable.
+## NLP
 
-Purchase Flow
+* Transformers
+* Sentence Transformers
 
-You said
+## Data Processing
 
-Inventory Manager updates stock
+* Pandas
+* NumPy
 
-↓
+## Visualization
 
-Request goes to Owner
+* Matplotlib
 
-I would improve it.
+## Model Serving
 
-Inventory Manager
+* FastAPI REST API
 
-↓
+---
 
-Purchase Request
+# 🗄 Database
 
-↓
+* PostgreSQL
 
-Owner Approval
+## ORM
 
-↓
+* Prisma
 
-Inventory Updated
+## Caching
 
-Don't allow inventory manager to directly increase stock.
+* Redis
 
-Because
+## Object Storage
 
-Stock is money.
+* AWS S3
 
-Only Owner approves.
+---
 
-Example
+# 🔐 Authentication
 
-Rice
+* Email OTP
+* Mobile OTP
+* JWT Access Token
+* Refresh Token
+* Role Based Access Control (RBAC)
 
-Current
+### Roles
 
-40
+* Super Admin
+* Cooperative Admin
+* Weaver
+* Buyer
+* Government Officer
 
-↓
+---
 
-Inventory Manager
 
-Request
 
-+200
+# 🚀 Deployment
 
-↓
+Frontend
 
-Owner
+* Vercel
 
-Approve
+Backend
 
-↓
+* Railway
+* Render
 
-Inventory
+AI
 
-240
-Damage Flow
+* Render
 
-Inventory Manager
+Database
 
-Damaged
+* Neon PostgreSQL
 
-↓
+Storage
 
-Create Damage Report
-
-↓
-
-Owner Approval
-
-↓
-
-Inventory Reduced
-
-Again,
-
-Don't reduce inventory immediately.
-
-Owner approves.
-
-Sales Flow
-
-Exactly what you wrote.
-
-Customer
-
-↓
-
-Sales Staff
-
-↓
-
-Barcode Scan
-
-↓
-
-Invoice
-
-↓
-
-Payment
-
-↓
-
-Inventory Reduced
-
-↓
-
-Dashboard Updated
-
-Perfect.
-
-Payment
-
-Razorpay
-
-Invoice
-
-↓
-
-Pay Now
-
-↓
-
-Success
-
-↓
-
-Order Completed
-
-↓
-
-Inventory Updated
-
-↓
-
-Owner Dashboard Updated
-
-Perfect.
-
-AI Module
-
-I would make it smarter.
-
-Instead of only
-
-Demand Forecast
-
-Build
-
-AI Center
-
-Inside AI
-
-Demand Forecast
-
-Sales Prediction
-
-Dead Stock Detection
-
-Fast Moving Products
-
-Slow Moving Products
-
-Purchase Recommendation
-
-Low Stock Prediction
-
-Profit Analysis
-
-This will impress interviewers.
-
-Notifications
-
-Every important action generates notifications.
-
-Inventory Manager
-
-↓
-
-Stock Below Minimum
-
-↓
-
-Owner Notification
-
-Sales
-
-Large Order
-
-↓
-
-Owner Notification
-
-Employee Created
-
-↓
-
-Notification
-
-Password Changed
-
-↓
-
-Notification
-
-Approval Pending
-
-↓
-
-Notification
-
-Reports
-
-Owner
-
-Daily Sales
-
-Weekly Sales
-
-Monthly Sales
-
-Inventory Report
-
-Profit Report
-
-GST Report
-
-Employee Performance
+* AWS S3 
+* mongodb cloudinary
