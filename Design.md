@@ -2,9 +2,7 @@
 
 This document outlines the core design principles, typography, color palettes, and interactive concepts for the **Kargha** web application. The design aesthetic is rooted in traditional Indian handloom, artisan craftsmanship, and textile heritage.
 
----
-
-## 🖋 Typography
+## Typography
 
 To create a warm, approachable, yet deeply traditional feel, we use a two-font system pairing a relaxed English font with a beautifully curved Devanagari script.
 
@@ -18,13 +16,11 @@ To create a warm, approachable, yet deeply traditional feel, we use a two-font s
 * **Why it works:** `Amita` is a Latin and Devanagari typeface that has a beautifully flowing, almost handwritten quality. It brings a sense of authentic Indian heritage and fluid motion, perfect for the "Kargha" branding or traditional quotes.
 * **CSS Import:** `@import url('https://fonts.googleapis.com/css2?family=Amita:wght@400;700&display=swap');`
 
----
-
-## 🎨 Color Palettes
+## Color Palettes
 
 The application features a seamless toggle between two distinct themes, both heavily inspired by natural artisan materials.
 
-### 🌿 Light Theme (Beige)
+### Light Theme (Beige)
 **Overall feel:** Cotton paper • Handmade • Heritage • Warm sunlight
 
 | Purpose | Hex Code | Visual Reference |
@@ -41,7 +37,7 @@ The application features a seamless toggle between two distinct themes, both hea
 | **Highlight** | `#C99A52` | Woven gold thread (Zari) |
 | **Error / Alert** | `#B22222` | Traditional Madder Red |
 
-### 🌙 Dark Theme (Brown)
+### Dark Theme (Brown)
 **Overall feel:** Burnt wood • Handloom • Traditional workshop • Antique furniture
 
 | Purpose | Hex Code | Visual Reference |
@@ -58,9 +54,7 @@ The application features a seamless toggle between two distinct themes, both hea
 | **Highlight** | `#C8A45C` | Antique gold |
 | **Error / Alert** | `#C43A3A` | Deep Kumkum Red |
 
----
-
-## 🧵 UI & Textural Elements
+## UI & Textural Elements
 
 To bring the handloom aesthetic to life, the UI relies on structural CSS rather than heavy images:
 
@@ -68,9 +62,7 @@ To bring the handloom aesthetic to life, the UI relies on structural CSS rather 
 * **The Stitching:** Form cards feature subtle `dashed` borders on the inner left and right edges, mimicking authentic fabric stitching. 
 * **Layered Patches:** Instead of standard drop-shadows, containers can use rougher, offset borders to look like fabric patches sewn onto the main canvas.
 
----
-
-## ✨ Interactive & Thematic Ideas
+## Interactive & Thematic Ideas
 
 To elevate the user experience and fully embrace the Kargha identity, consider implementing these thematic elements:
 
