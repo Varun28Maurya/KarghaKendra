@@ -1,0 +1,67 @@
+/* @import url() FONT IMPORTS MUST ALWAYS BE AT THE VERY TOP OF THIS FILE, ABOVE THE TAILWIND IMPORTS — DO NOT DELETE THIS COMMENT */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amita:wght@400;700&display=swap');
+
+/* CRITICAL: THE FOLLOWING TAILWIND IMPORTS MUST NEVER BE DELETED OR REORDERED — DO NOT DELETE THIS COMMENT */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* END TAILWIND IMPORTS — ALL OTHER CSS MUST GO BELOW THIS LINE */
+
+:root {
+  --bg: #F5EFE3;
+  --bg-secondary: #ECE1CF;
+  --surface: #FFF8EE;
+  --border: #D6C3A5;
+  --text: #3B2418;
+  --text-secondary: #6B5846;
+  --primary: #8A4B2A;
+  --primary-hover: #6E381F;
+  --accent: #B8612C;
+  --highlight: #C99A52;
+  --error: #B22222;
+}
+html.dark {
+  --bg: #1F1712;
+  --bg-secondary: #2B2019;
+  --surface: #36261D;
+  --border: #5A4334;
+  --text: #F3E7D3;
+  --text-secondary: #D5C2AA;
+  --primary: #A76436;
+  --primary-hover: #C27B47;
+  --accent: #D38A45;
+  --highlight: #C8A45C;
+  --error: #C43A3A;
+}
+body {
+  font-family: 'Quicksand', system-ui, sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+}
+.font-amita {
+  font-family: 'Amita', 'Quicksand', cursive;
+}
+/* Warp & weft fabric weave background */
+.weave-bg {
+  background-color: var(--bg);
+  background-image:
+    repeating-linear-gradient(45deg, rgba(138, 75, 42, 0.035) 0px, rgba(138, 75, 42, 0.035) 1px, transparent 1px, transparent 9px),
+    repeating-linear-gradient(-45deg, rgba(138, 75, 42, 0.035) 0px, rgba(138, 75, 42, 0.035) 1px, transparent 1px, transparent 9px);
+}
+.weave-panel {
+  background-color: var(--accent);
+  background-image:
+    repeating-linear-gradient(45deg, rgba(255, 255, 255, 0.06) 0px, rgba(255, 255, 255, 0.06) 1px, transparent 1px, transparent 10px),
+    repeating-linear-gradient(-45deg, rgba(0, 0, 0, 0.06) 0px, rgba(0, 0, 0, 0.06) 1px, transparent 1px, transparent 10px);
+}
+/* Thread spool scrollbar */
+::-webkit-scrollbar { width: 10px; height: 10px; }
+::-webkit-scrollbar-track { background: var(--bg-secondary); }
+::-webkit-scrollbar-thumb {
+  background: var(--highlight);
+  border-radius: 999px;
+  border: 2px solid var(--bg-secondary);
+}
+::-webkit-scrollbar-thumb:hover { background: var(--accent); }

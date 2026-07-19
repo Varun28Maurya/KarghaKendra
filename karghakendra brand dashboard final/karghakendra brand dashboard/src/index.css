@@ -1,0 +1,161 @@
+/* @import url() FONT IMPORTS MUST ALWAYS BE AT THE VERY TOP OF THIS FILE, ABOVE THE TAILWIND IMPORTS — DO NOT DELETE THIS COMMENT */
+@import url('https://fonts.googleapis.com/css2?family=Amita:wght@400;700&family=Quicksand:wght@400;500;600;700&display=swap');
+
+/* CRITICAL: THE FOLLOWING TAILWIND IMPORTS MUST NEVER BE DELETED OR REORDERED — DO NOT DELETE THIS COMMENT */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* END TAILWIND IMPORTS — ALL OTHER CSS MUST GO BELOW THIS LINE */
+
+:root {
+  --canvas: #F5EFE3;
+  --surface: #FFF8EE;
+  --stitch: #D6C3A5;
+  --mahogany: #3B2418;
+  --terracotta: #8A4B2A;
+  --saffron: #B8612C;
+  --zari: #C99A52;
+
+  --color-ivory-50: #FFF8EE;
+  --color-ivory-100: #F5EFE3;
+  --color-ivory-200: #ECE1CF;
+  --color-ivory-300: #D6C3A5;
+
+  --color-clay-50: #F8F1E6;
+  --color-clay-100: #ECE1CF;
+  --color-clay-200: #D6C3A5;
+  --color-clay-300: #B89D7A;
+  --color-clay-400: #8C735D;
+  --color-clay-500: #6B5846;
+  --color-clay-600: #8A4B2A;
+  --color-clay-700: #6E381F;
+  --color-clay-800: #3B2418;
+  --color-clay-900: #28170F;
+
+  --color-gold-50: #FFF4DF;
+  --color-gold-100: #F2DEB8;
+  --color-gold-200: #E5C68C;
+  --color-gold-300: #D6B56F;
+  --color-gold-400: #C99A52;
+  --color-gold-500: #B8612C;
+  --color-gold-600: #8A4B2A;
+
+  --color-sage-100: #E7ECE1;
+  --color-sage-400: #7F9471;
+  --color-sage-500: #5F7452;
+
+  --shadow-color-1: rgba(138, 75, 42, 0.10);
+  --shadow-color-2: rgba(59, 36, 24, 0.28);
+  --shadow-color-3: rgba(214, 195, 165, 0.75);
+  --shadow-color-4: rgba(59, 36, 24, 0.22);
+
+  --grid-color: rgba(138, 75, 42, 0.025);
+  --grid-color-subtle: rgba(138, 75, 42, 0.02);
+  --stitch-color: rgba(138, 75, 42, 0.28);
+
+  --scrollbar-track: #ECE1CF;
+  --scrollbar-thumb: #B8612C;
+  --scrollbar-thumb-hover: #8A4B2A;
+}
+
+.dark {
+  --canvas: #120A07;
+  --surface: #1E120C;
+  --stitch: #4A3022;
+  --mahogany: #F5EFE3;
+  --terracotta: #E88354;
+  --saffron: #F38C4F;
+  --zari: #EAB973;
+
+  --color-ivory-50: #1E120C;
+  --color-ivory-100: #120A07;
+  --color-ivory-200: #342016;
+  --color-ivory-300: #4A3022;
+
+  --color-clay-50: #261710;
+  --color-clay-100: #342016;
+  --color-clay-200: #4A3022;
+  --color-clay-300: #735745;
+  --color-clay-400: #A28E7E;
+  --color-clay-500: #BEAA9A;
+  --color-clay-600: #E88354;
+  --color-clay-700: #F09B74;
+  --color-clay-800: #F5EFE3;
+  --color-clay-900: #FFFDF9;
+
+  --color-gold-50: #2D1B11;
+  --color-gold-100: #5E3D23;
+  --color-gold-200: #8E6038;
+  --color-gold-300: #BE8E52;
+  --color-gold-400: #EAB973;
+  --color-gold-500: #F38C4F;
+  --color-gold-600: #E88354;
+
+  --color-sage-100: #1C2718;
+  --color-sage-400: #A7C597;
+  --color-sage-500: #C2DBB4;
+
+  --shadow-color-1: rgba(0,0,0,0.30);
+  --shadow-color-2: rgba(0,0,0,0.50);
+  --shadow-color-3: rgba(0,0,0,0.40);
+  --shadow-color-4: rgba(0,0,0,0.45);
+
+  --grid-color: rgba(232, 131, 84, 0.05);
+  --grid-color-subtle: rgba(232, 131, 84, 0.04);
+  --stitch-color: rgba(232, 131, 84, 0.22);
+
+  --scrollbar-track: #342016;
+  --scrollbar-thumb: #F38C4F;
+  --scrollbar-thumb-hover: #E88354;
+}
+
+html, body, #root {
+  min-height: 100%;
+}
+body {
+  font-family: 'Quicksand', system-ui, sans-serif;
+  background-color: var(--canvas);
+  background-image:
+    repeating-linear-gradient(0deg, var(--grid-color) 0 1px, transparent 1px 5px),
+    repeating-linear-gradient(90deg, var(--grid-color-subtle) 0 1px, transparent 1px 6px);
+  color: var(--mahogany);
+  -webkit-font-smoothing: antialiased;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.font-serif-display {
+  font-family: 'Amita', serif;
+}
+/* Subtle hand-stitched edge for key fabric patches. */
+.stitched-panel {
+  position: relative;
+}
+.stitched-panel::before,
+.stitched-panel::after {
+  position: absolute;
+  top: 12px;
+  bottom: 12px;
+  width: 1px;
+  border-left: 1px dashed var(--stitch-color);
+  content: '';
+  pointer-events: none;
+  transition: border-color 0.3s ease;
+}
+.stitched-panel::before { left: 12px; }
+.stitched-panel::after { right: 12px; }
+/* Thread-spool scrollbar */
+::-webkit-scrollbar {
+  width: 11px;
+  height: 11px;
+}
+::-webkit-scrollbar-track {
+  background: var(--scrollbar-track);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-thumb);
+  border: 3px solid var(--scrollbar-track);
+  border-radius: 999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--scrollbar-thumb-hover);
+}
